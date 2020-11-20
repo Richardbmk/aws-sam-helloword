@@ -1,0 +1,16 @@
+# SAM Command lines:
+
+> sam init -r nodejs12.x
+> sam init --runtime nodejs12.x
+
+    ## Installing the dependencies
+> cd sam-app
+> cd hello-word
+> npm install package.json
+
+    ## Test lambda function locally (You need docker to do this)
+> cd ..
+> echo '{}' | sam local invoke HelloWorldFunction
+
+    ## Run lambda Function locally
+> sam local start-lambda
